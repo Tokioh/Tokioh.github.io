@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* --- Header --- */
+
+header {
+  width: 100%;
+  min-height: 1.5rem;
+  height: 7rem;
+  font-size: 1.8rem;
+  box-shadow: 0 1px 4px #888888d7;
+  display: flex;
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+  /* ---Propiedades Responsive --- */
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --- logo --- */
+.logo {
+  margin-left: 4rem;
+}
+#header-img {
+  height: 8rem;
+  width: auto;
+}
+
+/* --- Letras --- */
+#letras-logo {
+  font-family: 'Marcellus sc', sans-serif;
+  margin-left: 50rem;
+}
+    /* --- responsive letras logo --- */
+
+
+
+/* --- Barra de Navegacion ---- */
+#nav-bar  {
+  list-style: none;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.74);
+}
+
+.menu a{
+  text-decoration: none;
+}
+
+.menu > li {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+}
+
+.menu > li > a {
+  display: block;
+
+  margin: 20% 1.7rem;
+}
+
+.menu > li > a:visited {
+  color: #444444;
+}
+
+.menu > li > a:hover {
+  color: rgba(82, 243, 42, 0.801);
+  transition: all .4s;
+}
+
+/* --- propiedades de SUB-menu --- */
+.sub-menu {
+  width: 120%;
+  list-style: none;
+  position: absolute;
+  background-color: rgba(126, 126, 126, 0.76);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.2s;
+  border-radius: 0px 0px 5px 5px ;
+
+}
+
+.sub-menu li a {
+  display: block;
+  padding: 1.3rem 2rem;
+  color: white;
+}
+
+.sub-menu >li > a:hover {
+  color: rgba(82, 243, 42, 0.801);
+  transition: all 0.5s;
+}
+.menu li:hover .sub-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* --- Fin Del Header --- */
+/* --- Comienzo Del Contenido --- */
+
+/* banner e imagen*/
+.bg-header {
+  display: block;
+  margin: 0 auto;
+  background-color: black;
+  width: 100%;
+}
+
+.banner {
+  display: block;
+  margin: 0 auto;
+  width: 40% ;
+  height: auto;
+  padding-top: 7rem;
+}
+
+/* --- main --- */
+.main {
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+}
+
+h2 {
+  font-family: sans-serif ;
+  font-size:2.5rem;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+}
+
+h3 {
+  font-family: sans-serif ;
+  font-size: 2rem;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+}
+
+p {
+  font-size: 2rem;
+  padding: 0.7rem 2rem;
+}
+
+
+
+/* --- Productos Destacados --- */
+
+.contenedor h2 {
+  text-align: center;
+}
+
+.contenedor p {
+  width: 75%;
+  margin: auto;
+}
+
+.subtitle-des {
+  font-size: 1.7rem;
+  color: #424242;
+}
+
+.descripcion {
+  font-size: 1.7rem;
+  color: #424242;
+}
+
+.contenedor-videos {
+  padding: 3rem;
+  display: flex;
+  margin: 0 auto;
+  max-width: 90rem;
+}
+
+/* --- Categorias --- */
+
+.conte-categorias {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.img-cat {
+  width: 100%;
+}
+
+/* --- Colecciones --- */
+
+.contenedor-colect {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+}
+
+.img-hombres {
+  width: 100%;
+}
+
+.img-mujeres {
+  margin: auto 0;
+  height: 37rem;
+  align-self: center;
+}
+
+/* --- precios --- */
+.price-container {
+  margin-top: 1.5rem;
+  flex-direction: row;
+  display: flex;
+  align-items: baseline;
+  
+}
+
+.price {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.price span {
+  font-weight: 600;
+  font-size: 2rem;
+  color: rgb(16, 187, 53);
+}
+
+.btn-comprar {
+  margin-left: 3rem ;
+  padding: 0.5rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color:white;
+  border: none;
+  background-color: #5AB1d8;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+
+/* --- News & About --- */
+#cont-news-about {
+  display: grid;
+  width: 80%;
+  margin: 3rem auto;
+  grid-template-columns: 1fr 1fr;
+}
+
+#about {
+  text-align: left;
+  margin: 0rem 0 ;
+}
+
+.p-about {
+  width: 80%;
+}
+
+.newsletter {
+  width: 100%;
+}
+
+.newsletter h3 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2rem;
+  padding: 1rem 0rem 2rem 0em ;
+}
+
+.form {
+  margin-left: 2rem;
+}
+
+#email {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.6rem;
+  width: 60%;
+  margin-right: 3.5rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #7a7a7a;
+}
+
+#submit {
+  width: 20%;
+  padding: 0.8rem;
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(51, 206, 12, 0.801);
+}
+
+/* --- footer --- */
+
+footer {
+  background-color: #e3e3e3;
+  color: black ;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.425);
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.6rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.425);
+}
+
+.footer a:hover {
+  color: rgba(82, 243, 42, 0.801);
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer  ul  li {
+  display: inline;
+  margin-left: 0.6rem;
+}
+
+/* --- Final de la WEB --- */
+/* --- RESPOSIVE SET --- */
